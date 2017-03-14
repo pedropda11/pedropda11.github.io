@@ -1,23 +1,41 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+	<body>
+		<h1>Please enter Your Details For Our Dating Website</h1>
+	
+		<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Your Face</legend>
+				Your image:<input type="file" required> <br>
+				Image preview:<img id="preview" required> <br>
+			</fieldset><br>
+			<fieldset>
+				<legend>Your general details</legend>
+					Name:<input type="text" required> <br>
+					Gender:<input type="radio" name="gender" value="male" required>Male<input type="radio" name="gender" value="female" required>Female<br>
+					Age:<input type="number"> <br>
+					Date of birth:<input type="date"> <br>
+					Favourite color:<input type="color"> <br>
+          Which country:
+             <select>
+                 <option>--no selection--</option>
+                 <option value="mex">México</option>
+                 <option value="usa">USA</option>
+                 <option value="ch">China</option>
+                 <option value="fr">France</option>
+                 <option value="uk">UK</option>
+             </select>
+			</fieldset> <br>
+		  	<fieldset>
+				<legend>Your Indicators</legend>
+					Height:<input type="range" min="0" max="100"> <br>
+					Salary:<input type="range" min="0" max="100"> <br>
+			</fieldset> <br>
+		  	<fieldset>
+				<legend>Your Contact Information</legend>
+					Email:<input type="email"> <br>
+					Mobile:<input type="tel"> <br>
+          Address:<textarea name="address"></textarea> <br>
+					Method to contact you:<input type="checkbox" name="contact" value="email">Email<input type="checkbox" name="contact" value="whatsapp">Whatsapp<input type="checkbox" name="contact" value="chat">In-app chat
+			</fieldset> <br>
+			<input type="submit">
+		</form>
+	</body>
