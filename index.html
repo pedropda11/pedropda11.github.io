@@ -1,23 +1,94 @@
----
-layout: default
----
+<link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic|Montserrat:400,700|Cardo:400italic|Advent+Pro:100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<div class="home">
+<!-- NAVIGATION -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand scroll" href="#home">Pedro Pineda</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        <li><a href="#home" class="scroll">HOME</a></li>
+        <li><a href="#about" class="scroll">ABOUT</a></li>
+        <li><a href="#portfolio" class="scroll">PORTFOLIO</a></li>
+        <li><a href="#contact" class="scroll">CONTACT</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+    
+    
+  <!-- HOME -->
+  <div id="home" class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>WEB</h1>
+          <h5>DEVELOPMENT</h5>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
+  
+  <!-- ABOUT -->
+  <div id="about" class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-12">
+          <h1>ABOUT</h1>
+          
+          
+          <p class="lead">I'm Pedro, a student from Mexico City.</p>
+            <p>Made this page as a portfolio for <a href="https://www.freecodecamp.com/pedropda" target="_blank">FreeCodeCamp<em class="fa fa-external-link"></em></a> projects.</p>
+          <p>I will continue to update this website with new work as I acquire web development and other technologies skills and use them to build cool and exciting projects. Stay tuned!.</p>
+        </div>
+      </div>
+    </div>    
+  </div>
+  
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <!-- PORTFOLIO -->
+  <div id="portfolio" class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>PORTFOLIO</h1>
+          <p class="lead">Below you'll find some of my recent work.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!-- CONTACT -->
+  <div id="contact" class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>CONTACT</h1>
+          <p class="lead">Say Hello!</p>
+          <div class="social-cont">
+            <div class="row">
+              <div class="col-sm-12">
+                <a class="btn btn-default btn-lg linkedin-btn" href="https://www.linkedin.com/in/pedro-pineda-07b21b129/" role="button" target="_blank"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+                <a class="btn btn-default btn-lg twitter-btn" href="https://twitter.com/pedro55324574" role="button" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+                <a class="btn btn-default btn-lg github-btn" href="https://github.com/pedropda" role="button" target="_blank"><i class="fa fa-github"></i><span>Github</span></a>
+                <a class="btn btn-default btn-lg fcc-btn" href="http://www.freecodecamp.com/pedropda" role="button" target="_blank"><i class="fa fa-fire"></i><span>freeCodeCamp</span></a>
+              </div>
+            </div>  
+          </div>
 
-</div>
+        </div>
+      </div>
+    </div>
+  </div>
